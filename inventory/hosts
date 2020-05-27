@@ -1,0 +1,15 @@
+all:
+  vars:
+    ansible_user: pi
+    ansible_python_interpreter: auto_silent
+  # hosts unallocted to regions
+  hosts:
+  children:
+    # regions
+    wolseley:
+      hosts:
+        rufftasselmanor.mynetgear.com:
+    pinawa:
+      hosts:
+    selkirk:
+      hosts:
